@@ -1,16 +1,16 @@
 
 const { EventEmitter } = require('events')
 const log = require('loglevel')
-const ethUtil = require('ethereumjs-util')
+const ethUtil = require('kapoiojs-util')
 
 const { BN } = ethUtil
 const bip39 = require('bip39')
 const ObservableStore = require('obs-store')
 const encryptor = require('browser-passworder')
-const { normalize: normalizeAddress } = require('eth-sig-util')
+const { normalize: normalizeAddress } = require('kap-sig-util')
 
-const SimpleKeyring = require('eth-simple-keyring')
-const HdKeyring = require('eth-hd-keyring')
+const SimpleKeyring = require('kap-simple-keyring')
+const HdKeyring = require('kap-hd-keyring')
 
 const keyringTypes = [
   SimpleKeyring,
